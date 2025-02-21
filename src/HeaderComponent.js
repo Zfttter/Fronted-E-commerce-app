@@ -10,6 +10,7 @@ import {
   Button,
   InputGroup,
 } from "react-bootstrap";
+
 import { LinkContainer } from "react-router-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -20,29 +21,24 @@ const HeaderComponent = () => {
         <LinkContainer to="/">
           <Navbar.Brand href="/">BEST ONLINE SHOP</Navbar.Brand>
         </LinkContainer>
-
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <InputGroup>
-              <DropdownButton
-                id="dropdown-basic-button"
-                title="All"
-              >
+              <DropdownButton id="dropdown-basic-button" title="All">
                 <Dropdown.Item>Electronics</Dropdown.Item>
                 <Dropdown.Item>Cars</Dropdown.Item>
                 <Dropdown.Item>Books</Dropdown.Item>
               </DropdownButton>
-              <Form.Control type="text" placeholder="Search in shop..." />/////
+              <Form.Control type="text" placeholder="Search in shop ..." />
               <Button variant="warning">
-              <i className="bi bi-search text-dark"></i>
+                <i className="bi bi-search text-dark"></i>
               </Button>
-              
             </InputGroup>
           </Nav>
           <Nav>
-            
-          <LinkContainer to="/admin/orders">
+
+            <LinkContainer to="/admin/orders">
               <Nav.Link>
                 Admin
                 <span className="position-absolute top-1 start-10 translate-middle p-2 bg-danger border border-light rounded-circle"></span>
@@ -57,7 +53,7 @@ const HeaderComponent = () => {
               >
                 My orders
               </NavDropdown.Item>
-              
+
               <NavDropdown.Item eventKey="/user" as={Link} to="/user">
                 My profile
               </NavDropdown.Item>
