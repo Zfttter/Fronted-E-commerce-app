@@ -26,14 +26,17 @@ const HeaderComponent = () => {
             <InputGroup>
               <DropdownButton
                 id="dropdown-basic-button"
-                title="Dropdown button"
+                title="All"
               >
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <Dropdown.Item>Electronics</Dropdown.Item>
+                <Dropdown.Item>Cars</Dropdown.Item>
+                <Dropdown.Item>Books</Dropdown.Item>
               </DropdownButton>
-              <Form.Control type="text" placeholder="Normal text" />
-              <Button variant="warning">Warning</Button>
+              <Form.Control type="text" placeholder="Search in shop..." />/////
+              <Button variant="warning">
+              <i className="bi bi-search text-dark"></i>
+              </Button>
+              
             </InputGroup>
           </Nav>
           <Nav>
